@@ -18,7 +18,7 @@ This analysis seeks to understand if there is bias towards favorable reviews fro
 
 ### Summary of Results
 
-<!-- 1-2 sentences summarizing findings -->
+There is no clear evidence of positivity bias among paid Amazon reviews. Although the mean rating for paid reviews is higher than the mean rating for unpaid reviews, this can be explained by the higher proportion of 1-star reviews among unpaid reviews.
 
 ## Method
 
@@ -29,7 +29,7 @@ This analysis seeks to understand if there is bias towards favorable reviews fro
 3. Created a database, along with table schemas, in pgAdmin.
 
 <!-- AWS / pgAdmin Setup Screenshots -->
-<kbd> <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/AWS_RDS.png" height="200"></img> <kbd>
+<kbd> <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/AWS_RDS.png" height="200"></img><kbd>
 
 <div>
   <kbd>
@@ -51,15 +51,45 @@ This analysis seeks to understand if there is bias towards favorable reviews fro
 2. Calculate summary statistics for paid and unpaid reviews.
 3. Plot rating trends for paid vs. unpaid reviews.
 
-<!--
 ## Results
 
+### Summary Stats
 
-Analysis of 38010 Amazon reviews for pet products yielded the following results:
+Of **38010** Amazon Pet Product reviews:
+- **170** were paid and **37,840** were unpaid
+- Mean / Median Review Rating
+  - **Paid:** 3.93 Stars / 4.0 Stars
+  - **Unpaid:** 3.76 Stars / 5.0 Stars
+- Percent of 5-Star Reviews
+  - **Paid:** 38.24%
+  - **Unpaid:** 54.47%
 
-<kbd> <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/review_summary.png" /> <kbd>
+<div>
+  <kbd>
+    <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/review_summary.png" width=460></img>
+  </kbd>
+</div>
 
--->
+### Distribution
+
+- The distribution of ratings among paid reviews is skewed to the right (towards 5 stars), indicating that paid reviews are generally more positive than negative.
+- The distribution of ratings among unpaid reviews is bimodal, concentrated at 1-star and 5-star reviews.
+- Unpaid reviews consist of more "extreme" ratings: 74% of unpaid reviews have either 1-star or 5-star ratings. Comparatively, only 42% of paid reviews are "extreme". 
+
+<div>
+  <kbd>
+    <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/clustered_bar.png" width=460></img>
+    <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/distribution.png" width=460></img>
+  </kbd>
+</div>
+
+### Conclusion
+
+There is no clear evidence of positivity bias among paid Amazon reviews. Although the mean rating for paid reviews is higher than the mean rating for unpaid reviews, this can be explained by the higher proportion of 1-star reviews among unpaid reviews. The data suggest that unpaid reviews follow the consumer-psychology hypothesis that buyers are more likely to leave a review if they are highly satisfied (5-star) or highly unsatisfied (1-star) with the product. In contrast, the paid reviews in this dataset reflect a more even distribution of ratings. This may be due to the fact that consumers were obligated to leave a review, and therefore the pool of reviewers was not as concentrated with people who had strong positive or negative feelings about the product.
+
+### Limitations
+
+- Proportion of paid reviews in dataset was very small (<1% of total reviews)
 
 ## Resources
 
