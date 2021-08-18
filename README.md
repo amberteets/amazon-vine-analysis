@@ -64,9 +64,10 @@ Of **38010** Amazon Pet Product reviews:
   - **Paid:** 38.24%
   - **Unpaid:** 54.47%
 
+<!-- Summary DataFrame -->
 <div>
   <kbd>
-    <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/review_summary.png" width=460></img>
+    <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/review_summary.png" height=100></img>
   </kbd>
 </div>
 
