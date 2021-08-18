@@ -28,6 +28,12 @@ This analysis seeks to understand if there is bias towards favorable reviews fro
 2. Using pgAdmin and postgreSQL, created a server and connected it to the AWS database.
 3. Created a database, along with table schemas, in pgAdmin.
 
+<kbd> <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/AWS_RDS.png" /> <kbd>
+  
+<kbd> <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/pgadmin_server.png" /> <kbd>
+  
+<kbd> <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/pgadmin_server_conn.png" /> <kbd>
+
 ### ETL
 
 1. Using PySpark in Google Colab Notebooks, extract AWS S3 dataset as a DataFrame.
