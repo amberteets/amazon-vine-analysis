@@ -28,11 +28,16 @@ This analysis seeks to understand if there is bias towards favorable reviews fro
 2. Using pgAdmin and postgreSQL, created a server and connected it to the AWS database.
 3. Created a database, along with table schemas, in pgAdmin.
 
-<kbd> <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/AWS_RDS.png" /> <kbd>
-  
-<kbd> <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/pgadmin_server.png" /> <kbd>
-  
-<kbd> <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/pgadmin_server_conn.png" /> <kbd>
+<!-- AWS / pgAdmin Setup Screenshots -->
+<kbd> <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/AWS_RDS.png" height="200"></img> <kbd>
+
+<div>
+  <kbd>
+    <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/pgadmin_server.png" height="250"></img>
+    <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/pgadmin_server_conn.png" height="250"></img>
+    <img src="https://github.com/amberteets/amazon-vine-analysis/blob/main/Resources/pgadmin_db.png" height="250"></img>
+  </kbd>
+ </div>
 
 ### ETL
 
