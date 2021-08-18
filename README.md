@@ -22,7 +22,7 @@ This analysis seeks to understand if there is bias towards favorable reviews fro
 
 ## Method
 
-### Setup
+### Data Storage
 
 1. Created relational database using AWS RDS service.
 2. Using pgAdmin and postgreSQL, created a server and connected it to the AWS database.
